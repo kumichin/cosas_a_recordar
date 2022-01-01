@@ -1,0 +1,24 @@
+Etiqueta HEAD
+  3 Comentarios  258
+Hay dos secciones en una página web: la cabecera (head) y el cuerpo (body). La sección head contiene información que describe el documento de la página web. La sección del cuerpo contiene las etiquetas, texto, imágenes y otros objetos reales que el navegador muestra como página web.
+
+La sección <head>
+Los elementos que se encuentran en la sección head incluyen el título de la página web (title), las metaetiquetas (meta tags) que describen el documento (como la codificación de caracteres utilizada y la información a la que pueden acceder los motores de búsqueda) y las referencias a scripts y estilos (style, script, base y link). Muchas de estas características no se muestran directamente en la página web.
+
+El elemento head comienza con la etiqueta <head> y termina con la etiqueta </head>. Siempre codificarás al menos otros dos elementos en la sección head: un elemento title y un elemento meta.
+
+El elemento title configura el texto que aparecerá en la sección barra de título de la ventana del navegador. El texto entre las etiquetas <title> y </title> se llama título de la página web.
+El elemento meta describe una característica de una página web, como la codificación de caracteres. La codificación de caracteres es la representación interna de letras, números y símbolos en un archivo como una página web u otro archivo que se almacena en una computadora y puede transmitirse a través de Internet.
+Hay muchos conjuntos de codificación de caracteres diferentes. Sin embargo, es una práctica común utilizar un conjunto de codificación de caracteres ampliamente soportado, como utf-8, que es una forma de Unicode (http://www.unicode.org). La etiqueta meta no se utiliza como un par de etiquetas de apertura y cierre. Se considera una etiqueta independiente o autocontenida (denominada elemento void en HTML5). La etiqueta meta utiliza el atributo charset para indicar la codificación de caracteres.
+
+<meta charset="utf-8">
+Este es un ejemplo típico de cómo usar correctamente la etiqueta <head>. (Aprenderás sobre <title> más adelante, aquí).
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Este es el Title. </title>
+</head>
+…mi página en HTML
+</html>
