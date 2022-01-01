@@ -1,0 +1,59 @@
+na página básica de HTML5 sería la siguiente.
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Título de la página, aparece en la pestaña del navegador.</title>
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+<LINK REL=StyleSheet HREF="color-8b.css" TYPE="text/css" TITLE="estilo de color 8-bit" MEDIA="screen, print">
+<LINK REL="Alternate StyleSheet" HREF="color-24b.css" TYPE="text/css" TITLE="estilo de color 24-bit" MEDIA="screen, print">
+<LINK REL=StyleSheet HREF="aural.css" TYPE="text/css" MEDIA=screen>
+<!--La etiqueta <LINK> se coloca en la cabecera HEAD del documento. El atributo opcional TYPE se usa para especificar un tipo de medio --text/css para una hoja de estilo en cascada-- permitiéndole a los navegadores omitir los tipos de hoja de estilo que no soportan. También es una buena idea configurar el servidor para enviar text/css como Content-type para archivos CSS.
+
+Las hoja de estilo externas no debrían contener ninguna etiqueta HTML como <HEAD> o <STYLE>. La hoja de estilo solo debería consistir simplemente de reglas de estilo o sentencias. Un archivo que solo consista de
+
+P { margin: 2em }
+
+podría usarse como una hoja de estilo externa.
+
+La etiqueta <LINK> también toma un atributo opcional MEDIA, que especifica el medio o medios en que debería aplicarse la hoja de estilo. Los valores posibles son
+
+screen (valor por defecto), para presentación en pantallas de computadoras no-paginadas;
+print, para salida a una impresora;
+projection, para presentaciones en proyectores;
+aural, para sintetizadores de voz;
+braille, para presentación en dispositivos braille;
+tty, para pantalla en celda de caracteres (usando una fuente de inclinación fija);
+tv, para televisores;
+all, para todos los dispositivos de salida.
+Medios múltiples se especifican mediante una lista separada por comas, o por el valor all.
+
+Netscape Navigator 4.x ignora incorrectamente cualquier hoja de estilo enlazada o incrustada declarada con valores MEDIA diferentes de screen. Por ejemplo, MEDIA="screen, projection" provocará que la hoja de estilo sea ignorada por Navigator 4.x, aun si el dispositivo de presentación es una pantalla de computadora. Navigator 4.x también ignora hojas de estilo declaradas con MEDIA=all.
+
+El atributo REL se usa para definir la relación entre el archivo enlazado y el documento HTML. REL=StyleSheet especifica un estilo persistente o preferido mientras que REL="Alternate StyleSheet" define un estilo alterno. Un estilo persistente es aquel que siempre se aplica si están activas las hojas de estilo. La ausencia del atributo TITLE, como en la primera etiqueta <LINK> en el ejemplo, define un estilo persistente.
+
+Un estilo preferido es uno que se aplica automáticamente, como en la segunda etiqueta <LINK> en el ejemplo. La combinación de REL=StyleSheet y un atributo TITLE especifica un estilo preferido. Los autores no pueden especificar más de un estilo preferido.
+
+Un estilo alterno se indica por REL="Alternate StyleSheet". La tercera etiqueta <LINK> en el ejemplo define un estilo alterno, que el usuario podría elegir para reemplazar la hoja de estilo preferido.
+
+Note que los navegadores actuales generalmente carecen de la capacidad de elegir estilos alternos.
+
+Un estilo simple también puede ser dado mediante múltiples hojas de estilo:
+
+<LINK REL=StyleSheet HREF="basico.css" TITLE="Contemporaneo">
+<LINK REL=StyleSheet HREF="tablas.css" TITLE="Contemporaneo">
+<LINK REL=StyleSheet HREF="formas.css" TITLE="Contemporaneo">
+
+En este ejemplo, tres hojas de esilo son combinadas en un estilo "Contemporaneo" que se aplica como una hoja de estilo preferido. Para combinar múltiples hojas de estilo en un estilo único, se debe usar el mismo TITLE con cada hoja de estilo.
+
+Una hoja de estilo externa es ideal cuando el estilo se aplica a muchas páginas. Con una hoja de estilo externo, un autor podría cambiar la apariencia de un sitio completo mediante el cambio de un solo archivo. Además, la mayoría de navegadores guardan en caché las hojas de estilo externas, evitando así una demora en la presentación una vez que la hoja de estilo se ha guardado en caché.-->
+</head>
+<body>
+
+<h1>Esto es un titulo</h1>
+
+<p>Esto es un parrafo. Aqui escribimos informacion.</p>
+<a href="https://loquesea.com">Esto es un enlace a la web.</a>
+
+</body>
+</html>
